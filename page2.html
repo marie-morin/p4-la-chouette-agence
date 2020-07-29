@@ -1,18 +1,20 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	<title>Contact | La Chouette Agence</title>
 
+	<meta charset="utf-8">
+	<meta name="description"
+		content="Vous souhaitez nous contacter, prendre rendez-vous avec notre agence de web design ? Nos coordonnées sont là : 02 51 85 26 41">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-
 
 	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
@@ -32,7 +34,29 @@
 
 		gtag('config', 'UA-105820344-2');
 	</script>
-	<title>page2</title>
+	<!-- Balisage JSON-LD -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"image": "https://marie-morin.github.io/p4-la-chouette-agence/img/la-chouette-agence.png",
+			"email": "contact@lachouetteagence.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "2 place Sathonay",
+				"addressLocality": "Lyon",
+				"postalCode": "69001"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": {
+					"@type": "DayOfWeek",
+					"name": "du lundi au vendredi"
+				},
+				"opens": "Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30"
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -44,8 +68,8 @@
 				<nav class="navbar row">
 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png"
-								alt="atlanta web design logo" height="40" />
+						<a class="navbar-brand" href="index.html">
+							<img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" />
 						</a>
 
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
