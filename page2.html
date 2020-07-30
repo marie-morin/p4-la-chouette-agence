@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 
 	<script src="./js/jquery-2.1.0.min.js"></script>
@@ -83,14 +83,13 @@
 					</div>
 
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-						<ul class="site-navigation nav navbar-nav">
+						<ul class="site-navigation nav navbar-nav page-two">
 							<li>
 								<a href="index.html">Accueil</a>
 							</li>
+
 							<li>
-							</li>
-							<li>
-								<a href="page2.html">page2 &gt;</a>
+								<a href="page2.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -99,18 +98,23 @@
 			</div>
 		</header>
 
-		<!-- ========== HERO ========== -->
+		<!-- ========== BANNER ========== -->
 		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
 			id="bloc-6">
 			<div class="container bloc-lg">
 				<div class="row">
-					<div class="col-sm-12">
+				</div>
+			</div>
+		</section>
 
-						<h1 class="text-center hero-bloc-text tc-white">
-							Parlons web design !
-						</h1>
+		<!-- ========== TITLE ========== -->
+		<section class="bloc bgc-white l-bloc no-padding" id="bloc-2-services">
+			<div class="container bloc-md">
+				<div class="row">
+					<div class="col-sm-12 text-center center">
+						<h1 class="text-center hero-bloc-text tc-grey">Parlons web design !</h1>
 
-						<p class="text-center mg-lg tc-white tight-width-whitespace">
+						<p class="text-center mg-lg tc-grey tight-width-whitespace padding-top">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 						</p>
@@ -120,32 +124,40 @@
 		</section>
 
 		<!-- ========== FORM ========== -->
-		<section class="bloc bgc-white l-bloc" id="bloc-7">
-			<div class="container bloc-lg">
+		<section class="bloc bgc-white l-bloc no-padding" id="bloc-7">
+			<div class="container bloc-lg form">
 				<div class="row">
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 center">
 						<form id="form_1" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 
 							<div class="form-group">
-								<label>Nom</label>
-								<input id="name" class="form-control" required />
+								<label>Nom</label><br>
+								<input type="text" id="name" class="form-control" required
+									placeholder="Jeanne Dupont" />
+								<!-- <p class="form-check">L'entrée est invalide</p> -->
 							</div>
 
 							<div class="form-group">
-								<label>Adresse email</label>
-								<input id="email" class="form-control" type="email" required />
+								<label>Adresse email</label><br>
+								<input id="email" class="form-control" type="email" required
+									placeholder="jeanne.dupont@gmail.com" />
+								<!-- <p class="form-check">L'entrée est invalide</p> -->
 							</div>
 
 							<div class="form-group">
-								<label>Comment nous avez-vous connu ?</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<label>Comment nous avez-vous connu ?</label><br>
+								<input class="form-control" type="text" required id="input_504"
+									placeholder="Ex: bouche à oreille, publicité, internet..." />
+								<!-- <p class="form-check">L'entrée est invalide</p> -->
 							</div>
 
 							<div class="form-group">
-								<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
-								<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+								<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label><br>
+								<textarea id="message" class="form-control" rows="4" cols="50" required
+									placeholder="Je souhaite revoir le design de mon site..."></textarea>
+								<!-- <p class="form-check">L'entrée est invalide</p> -->
 							</div>
 
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
@@ -156,12 +168,12 @@
 						</form>
 					</div>
 
-					<div class="col-sm-6">
-						<p>
-							contact@lachouetteagence.com<br>
-							2 place Sathonay 69001 Lyon<br>
-							Ouvert de 9h à 18h, du lundi au vendredi<br>
-						</p>
+					<div class="col-sm-6 center block-contact">
+						<p class="contact">contact@lachouetteagence.com</p>
+						<p class="contact">04 45 69 75 89</p>
+						<p class="contact">2 place Sathonay 69001 Lyon</p>
+						<p class="contact">Accès par le parking du Leclerc d'Etreu</p>
+						<p class="contact">Ouvert de 9h à 18h, du lundi au vendredi</p>
 					</div>
 
 				</div>
@@ -174,16 +186,16 @@
 		</a>
 
 		<!-- ========== FOOTER ========== -->
-		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+		<footer class="bloc bgc-atomic-tangerine d-bloc no-padding" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 center">
 
 						<p class="text-center white">
 							La chouette agence - Agence web basée à Lyon.<br>
 						</p>
 
-						<div class="row row-no-gutters social">
+						<div class="row row-no-gutters social flex">
 
 							<div class="col-sm-3">
 								<div class="text-center">
@@ -223,6 +235,7 @@
 				</div>
 			</div>
 		</footer>
+
 	</main>
 </body>
 
