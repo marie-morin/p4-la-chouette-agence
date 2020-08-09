@@ -16,11 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+
 	<!-- Global site tag - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105820344-2"></script>
 	<script>
@@ -53,7 +49,6 @@
 				<nav class="navbar row">
 
 					<div class="navbar-header">
-
 						<a class="navbar-brand" href="index.html">
 							<img src="img/la-chouette-agence.png"
 								alt="La Chouette Agence, entreprise de web design à Lyon" height="40" />
@@ -87,7 +82,7 @@
 
 		<!-- ========== HERO ========== -->
 		<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
-			id="bloc-1-hero">
+			id="bloc-1-hero" role="banner">
 			<div class="container bloc-lg">
 				<div class="row tight-width-whitespace">
 					<div class="col-sm-12">
@@ -97,11 +92,11 @@
 								alt="Logo de la Chouette Agence, entreprise de web design à Lyon" />
 						</figure>
 
-						<h1 class="text-center hero-bloc-text tc-tangarine ">
+						<h1 class="text-center hero-bloc-text tc-tangarine">
 							La chouette agence.
 						</h1>
 
-						<div class="text-center">
+						<div class="text-center" role="button">
 							<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
 								id="cta-hero">
 								Contact
@@ -120,8 +115,8 @@
 				<div class="row">
 					<div class="col-sm-12 text-center title">
 						<h2 class="mg-md text-center tc-grey">
-							La chouette agence est une agence de web design qui aide les entreprise à devenir
-							attractives et visibles sur Internet
+							La chouette agence est une agence de web design à Lyon qui aide les entreprise à devenir
+							attractives et visibles sur Internet.
 						</h2>
 					</div>
 				</div>
@@ -178,9 +173,10 @@
 				<div class="row voffset-lg voffset">
 					<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
 						<blockquote class="mg-md text-center quote">
-							"La chouette agence est une excellente agence web ! Les webdesigners ont réussi à capturer
+							"La chouette agence est une excellente entreprise webdesign à Lyon! Les webdesigners ont
+							réussi à capturer
 							l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos
-							ventes en ligne à Lyon."
+							ventes en ligne."
 						</blockquote>
 						<p class="mg-md text-center signature">Maxime Guibard, PDG de A vos fourchettes</p>
 					</div>
@@ -209,7 +205,7 @@
 							ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à
 							nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
 							qui seront facilement trouvable sur les moteurs de recherche. <br><br>
-							<a class="ltc-white bold-link" href="page2.html">
+							<a class="ltc-white bold-link font-weigth-link" href="page2.html">
 								Contactez notre équipe
 							</a><br>
 						</p>
@@ -224,7 +220,7 @@
 
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<h2 class="mg-md text-center tc-grey">
+						<h2 class="mg-md text-center tc-grey margin-bottom">
 							Nous travaillons avec beaucoup de clients, voici nos
 							réalisations.
 						</h2>
@@ -313,7 +309,7 @@
 		<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 			<div class="container bloc-lg">
 				<div class="row">
-					<h2 class="mg-md text-center tc-tangarine">
+					<h2 class="mg-md text-center white">
 						Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 					</h2>
 					<div class="col-sm-12 text-center">
@@ -329,8 +325,8 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
-							La chouette agence - Agence web basée à Lyon.<br>
+						<p class="text-center black">
+							La chouette agence - Entreprise webdesign basée à Lyon.<br>
 						</p>
 
 						<div class="row row-no-gutters social">
@@ -371,7 +367,7 @@
 
 						<div class="row">
 
-							<nav class="col-sm-4">
+							<nav class="col-sm-4 black">
 								Nos partenaires
 								<ul class="footer-links">
 									<li><a href="voiture.com">Constructeur automobile</a></li>
@@ -381,7 +377,7 @@
 								</ul>
 							</nav>
 
-							<nav class="col-sm-4">
+							<nav class="col-sm-4 black">
 								Nos ressources SEO
 								<ul class="footer-links">
 									<li><a href="annuaireseo.com">Annuaire SEO</a></li>
@@ -391,7 +387,7 @@
 								</ul>
 							</nav>
 
-							<nav class="col-sm-4">
+							<nav class="col-sm-4 black">
 								Nos ressources networking
 								<ul class="footer-links">
 									<li><a href="ameliorerseo.com">Améliorer SEO</a></li>
@@ -406,6 +402,14 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- ========== SCRIPTS ========== -->
+
+		<script src="./js/jquery-2.1.0-mini.js" async></script>
+		<script src="./js/bootstrap-mini.js" async></script>
+		<script src="./js/blocs-mini.js" async></script>
+		<script src="./js/jquery.touchSwipe-mini.js" async></script>
+		<script src="./js/gmaps.js" async></script>
 	</main>
 </body>
 

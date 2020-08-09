@@ -11,6 +11,11 @@ body {
     box-sizing: border-box;
 }
 
+*:focus,
+button:focus {
+    box-shadow: 0px 0px 5px blue;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -20,6 +25,11 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    font-weight: 800;
+}
+
+button:hover {
+    font-weight: 800;
 }
 
 #page-loading-blocs-notifaction {
@@ -292,6 +302,7 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    color: rgb(255, 137, 82);
 }
 
 .navbar {
@@ -486,7 +497,7 @@ button {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15); */
 }
 
 .icon-md {
@@ -672,7 +683,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757 !important;
+    color: #303030 !important;
 }
 
 .container {
@@ -727,7 +738,7 @@ p {
     margin: auto auto auto auto;
     display: flex;
     justify-content: space-between;
-    color: #F3976C !important;
+    color: rgb(255, 137, 82) !important;
 }
 
 .social:hover {
@@ -797,27 +808,27 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #F3976C;
+    background-color: transparent;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: rgb(255, 137, 82);
 }
 
 .tc-tangarine {
-    color: #F3976C !important;
+    color: rgb(255, 163, 121) !important;
 }
 
 .tc-grey {
-    color: #575757;
+    color: #303030;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF !important;
+    background: rgb(255, 137, 82);
+    color: #303030 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -834,7 +845,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C !important;
+    color: rgb(255, 137, 82) !important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -1134,7 +1145,7 @@ h4 {
 
 blockquote {
     border: none;
-    color: #575757;
+    color: #303030;
 }
 
 .no-padding {
@@ -1153,7 +1164,7 @@ blockquote {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    background-color: #F3976C;
+    background-color: rgb(255, 137, 82);
 }
 
 .contact {
@@ -1209,4 +1220,27 @@ footer .col-sm-4 {
 .row {
     width: 100%;
     margin: 0 auto;
+}
+
+.btn-block {
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.font-weigth-link:hover {
+    border: solid 1px white;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.black {
+    color: black !important;
 }
